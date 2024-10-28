@@ -12,7 +12,7 @@
 }
 
 h1 {
-    font-size: 16rem;
+    font-size: 12rem;
     margin: 0px;
 }
 
@@ -24,6 +24,7 @@ h2 {
 
 canvas {
     width: 100%;
+    max-height: 900px;
     aspect-ratio: 1;
 }
 
@@ -32,7 +33,15 @@ header {
     flex-direction: column;
     align-items: center;
     min-height: 1200px;
+    container-type: size;
 }
+
+@container (min-width: 1200px) {
+    header h1 {
+        font-size: 16rem;
+    }
+}
+
 
 body {
     max-width: 1200px;
@@ -54,7 +63,8 @@ a:hover {
 }
 
 .container img {
-    min-width: 500px;
+    width: 100%;
+    aspect-ratio: 1.5;
 }
 
 .container {
@@ -67,10 +77,11 @@ a:hover {
     margin: 30px 0px;
 }
 
-.container.blurb {
+.container .blurb {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 500px;
 }
 
 .container p {
