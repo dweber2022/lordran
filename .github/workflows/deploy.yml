@@ -35,11 +35,15 @@ jobs:
         with:
           deno-version: v2.x
       - name: Enter directory
-        run: cd lordran
+        run: |
+          cd lordran
+          ls -l
       - name: Install dependencies
         run: deno install
       - name: Build
-        run: deno task build
+        run: |
+          ls -l
+          deno task build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
