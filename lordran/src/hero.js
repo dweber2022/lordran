@@ -20,7 +20,7 @@ function init() {
     gltfLoader.setDRACOLoader(dracoLoader);
     let room;
     gltfLoader.load(
-        "/scene.gltf", 
+        "/lordran/scene.gltf", 
         (gltf) => { 
             room = gltf.scene;
             scene.add(gltf.scene); 
