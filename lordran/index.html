@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/bonfire.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/hero.js"></script>
+    <script type="module" src="/src/form.ts"></script>
+    <title>Lordran</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>LORDRAN</h1>
+      </header>
+      <main>
+        <div class="container">
+          <img src="https://static.wikia.nocookie.net/darksouls/images/5/54/Firelink_shrine02.jpg" />
+          <div class="blurb">
+            <h2>Firelink Shrine</h2>
+            <p>Firelink Shrine is the player's first destination in Dark Souls and Dark Souls Remastered. This ancient and crumbling shrine is used as a gathering hub and safe haven for many trainers, merchants and other story related characters. This central bonfire will be visited often, since it is also a crossroads for many regions and shortcuts.</p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="https://darksouls.wiki.fextralife.com/file/Dark-Souls/al_rotary.jpg" />
+          <div class="blurb">
+            <h2>Anor Londo</h2>
+            <p>Anor Londo is an area in Dark Souls and Dark Souls Remastered. With its perpetually setting sun and gorgeous architecture, the city of Anor Londo will take your breath away upon your first sight of it, but don't be fooled by its apparent tranquility. Reachable via a small orange ring that appears after defeating the Iron Golem on top of Sen's Fortress, it's the home of Lordran's remaining deities and the Lordvessel- an essential artifact for completing the main quest.</p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="https://static.wikia.nocookie.net/darksouls/images/1/19/Kiln_of_the_First_Flame_DS1.jpg" />
+          <div class="blurb">
+            <h2>Kiln of the First Flame</h2>
+            <p>Kiln of the First Flame is a Location in Dark Souls and Dark Souls Remastered. Once you've obtained the souls necessary to power the Lordvessel in the Firelink Altar, you may begin the end of your first journey.</p>
+          </div>
+        </div>
+        <form>
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" />
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+          <fieldset>
+            <legend>Which area would you like to visit the most?</legend>
+            <input type="radio" id="firelinkshrine" />
+            <label for="firelinkshrine">Firelink Shrine</label>
+            <input type="radio" id="anorlondo" />
+            <label for="anorlondo">Anor Londo</label>
+<input type="radio" id="kilnofthefirstflame" />
+            <label for="kilnofthefirstflame">Kiln of the First Flame</label>
+          </fieldset>
+          <label for="questions">Any Questions, Comments, Concerns?</label>
+          <textarea id="questions"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </main>
+      <footer>
+        <small>
+          Copyright © 2024. The model is based on <a href="https://sketchfab.com/3d-models/dark-souls-d823af63681b4e65b222606043ec81c7">"Dark Souls"</a> by <a href="https://sketchfab.com/dark_igorek">dark_igorek</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>
+        </small>
+      </footer>
+    </div>
+  </body>
+</html>
