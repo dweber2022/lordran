@@ -34,15 +34,13 @@ jobs:
         uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
-      - name: Enter directory
+      - name: Install dependencies
         run: |
           cd lordran
-          ls -l
-      - name: Install dependencies
-        run: deno install
+          deno install
       - name: Build
         run: |
-          ls -l
+          cd lordran
           deno task build
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -50,7 +48,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist folder
-          path: './dist'
+          path: './lordran/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
