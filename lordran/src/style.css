@@ -12,7 +12,7 @@
 }
 
 h1 {
-    font-size: 12rem;
+    font-size: 10rem;
     margin: 0px;
 }
 
@@ -63,6 +63,7 @@ a:hover {
 }
 
 .container img {
+    min-width: 100px;
     width: 100%;
     aspect-ratio: 1.5;
 }
